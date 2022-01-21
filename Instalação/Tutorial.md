@@ -6,4 +6,4 @@ Em seguida é necessário ter uma IDE para poder executar os códigos, atualment
 
 Após instalar o eclipse, vá em: aba **Help -> Eclipse Marketplace**. Procure por "Cucumber" na caixa de busca e faça a instalação do **Eclipse Cucumber Plugin**
 
-![alt-text](https://giphy.com/embed/l9xoAvjunoghagMbsh)
+![alt-text](https://giphy.com/embed/4TgEUMJSIDRL0zepDF/giphy.gif)
