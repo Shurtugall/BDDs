@@ -6,4 +6,8 @@ Em seguida é necessário ter uma IDE para poder executar os códigos, atualment
 
 Após instalar o eclipse, vá em: aba **Help -> Eclipse Marketplace**. Procure por "Cucumber" na caixa de busca e faça a instalação do **Eclipse Cucumber Plugin**
 
-![](http://i.imgur.com/OUkLi.gif)
+Assim que o plugin for instalado, basta criar um Maven Project. Verifique qual o jdk do projeto, se não for aquele que você baixou, clique com o botão direito no projeto e vá em: Properties -> Java Build Path -> Libraries, remova o JRE System Library, clique no botão add Library e adicione o jdk baixado.
+
+O próximo passo é baixar as dependencias do Cucumber. Para tal acesse o site do [Maven Repository](https://mvnrepository.com/search?q=cucumber) procure por cucumber e abra o [Cucumber JVM: Java](https://mvnrepository.com/artifact/io.cucumber/cucumber-java). Basta copiar a dependencia do Maven da última versão disponibilizada
+
+No projeto, procure pelo arquivo **pom.xml**, acrescente uma div de "<dependences>" e copie essa dependencia dentro da div. Feito isso o projeto está configurado.
