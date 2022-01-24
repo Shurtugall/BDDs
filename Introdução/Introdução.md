@@ -21,4 +21,20 @@ Dessa forma é possível usar ambos os casos no mesmo cenário, além de usá-lo
 
 ### Introdução
 
-Arquivo **.feature** é o arquivo responsável por conter as "histórias" a serem mapeadas e resolvidas de acordo com os critérios de aceitação
+Existem dois tipos de arquivos a serem utilizados:
+
+O arquivo **.feature** é o arquivo responsável por conter as funcionalidades a serem mapeadas e resolvidas de acordo com os critérios de aceitação. Dado como a fonte única de verdade, esse arquivo pode ser utilizado não apenas pelos QAs, mas pelos DEVs e até mesmo pelo Cliente, visto que contém fluxos do sistema.
+
+Um *Scenario* descreve um dos comportamentos desejados do sistema através de um exemplo concreto. Dentro do *Scenario* iremos definir os passos de Give, When e Then. Esses podem estar em 5 estados diferentes. Que são eles:
+
+| Estado    | Descrição                                                                         |  
+|-----------|-----------------------------------------------------------------------------------|
+| Undefined |Não foi gerado, é necessário implementar                                           |
+|  Pending  |Está pendente, foi criado mas entrou em uma excessão pendende *PendingException()* |
+|  Failed   |Falhou, lançou uma excessão diferente da excessão de pendente. *RuntimeException()*|
+|  Skiped   |Parou a execução em um passo anterior, logo pulou a execução dos passos skiped     |
+|  Passed   |Estado que define que o passo obteve sucesso. Ou seja, sem erros na execução       |
+
+O arquivo **.java** vai conter todas as implementações dos *scenarios*. Ou seja, o arquivo de features tende a conter apenas os fluxos, semelhante a um arquivo de header de algumas linguagens como *C*, enquanto que o arquivo java vai ser responsável por dizer o que deve ser feito em cada passo.
+
+
