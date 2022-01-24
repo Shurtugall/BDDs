@@ -1,7 +1,7 @@
 ### Assert
 
 Usado para garantir que um teste seja assertivo, ou seja, dado uma condição, se essa retornar o esperado, então retorna uma mensagem de sucesso.
-Abaixo alguns exemplos de tipos de asserts (outros exemplos podem ser encontrados em [Asserts](https://junit.org/junit4/javadoc/4.12/org/junit/Assert.html):
+Abaixo alguns exemplos de tipos de asserts (outros exemplos podem ser encontrados em [Asserts](https://junit.org/junit4/javadoc/4.12/org/junit/Assert.html)):
 
 | Tipo        | Descrição                                    |
 |-------------|----------------------------------------------|
