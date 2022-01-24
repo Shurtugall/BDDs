@@ -24,7 +24,6 @@ Assim, basta copiar a dependencia para o arquivo **pom.xml** conforme foi feito 
 Dessa forma, sempre que for executado um teste, podemos utilizar um runner do Junit, basta criar um arquivo no mesmo nível do arquivo java. É posível nomeá-lo como Runner.java. Dentro do arquivo basta conter a condição de *RunWith* e como forma opcional os *CucumberOptions*:
 
       @RunWith(Cucumber.class)
-	    @CucumberOptions(plugin = "pretty", monochrome = true, snippets = SnippetType.CAMELCASE)
-	    public class Runner {
-
-	    }
+      @CucumberOptions(plugin = "pretty", monochrome = true, snippets = SnippetType.CAMELCASE)
+      public class Runner {
+      }
