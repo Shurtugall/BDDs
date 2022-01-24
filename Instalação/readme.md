@@ -15,7 +15,7 @@ No projeto, procure pelo arquivo **pom.xml**, acrescente uma div de "<dependence
 
 ### Junit
 
-O Junit é um framework com suporte a testes automatizados
+O Junit é um framework com suporte a testes automatizados.
 
 Para fazer a instalação do mesmo, basta ir novamente no site do [Maven Repository](https://mvnrepository.com/search?q=cucumber) procurando por cucumber e procurar pela última versão disponível do [Cucumber JVM: Junit](https://mvnrepository.com/artifact/io.cucumber/cucumber-junit)
 
