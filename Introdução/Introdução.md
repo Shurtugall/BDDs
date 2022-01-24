@@ -2,7 +2,7 @@
 
 Linguagem usada para definir as features e estruturar todos os cenários. Extremamente legível para ser facilmente compreendida por todos os integrantes da equipe.
 
-Cenários são divididos em 3 passos principais:
+Cada Feature deve ter um ou mais cenários. Cenários são divididos em 3 passos principais:
 
 | Palavra chave   | Definição                                           |
 |-----------------|-----------------------------------------------------|
