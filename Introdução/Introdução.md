@@ -37,4 +37,31 @@ Um *Scenario* descreve um dos comportamentos desejados do sistema através de um
 
 O arquivo **.java** vai conter todas as implementações dos *scenarios*. Ou seja, o arquivo de features tende a conter apenas os fluxos, semelhante a um arquivo de header de algumas linguagens como *C*, enquanto que o arquivo java vai ser responsável por dizer o que deve ser feito em cada passo.
 
+Exemplos:
 
+.feature
+
+    Feature: Aprender Cucumber
+    Scenario: Deve executar especificacao
+	      Given que criei o arquivo corretamente
+	      When  executa-lo
+	      Then  a especificacao deve finalizar com sucesso
+
+.java
+    
+    public class AprenderCucumber {
+	    @Given("que criei o arquivo corretamente")
+	    public void que_criei_o_arquivo_corretamente() {
+	      System.out.println("Passou essa etapa");
+	    }
+
+	    @When("executa-lo")
+	    public void executa_lo() {
+        throw new RuntimeException();
+	    }
+
+	    @Then("a especificacao deve finalizar com sucesso")
+	    public void a_especificacao_deve_finalizar_com_sucesso() {
+	      throw new PendingException();
+	    }
+    }
