@@ -12,9 +12,9 @@ Cada Feature deve ter um ou mais cenários. Cenários são divididos em 3 passos
 
 **Dica**: busque deixar as sentenças o mais simples possíveis. Dessa forma é possível reaproveitar as mesmas. Por exemplo:
 
-    **Given** ~que está chovendo e estou sem guarda-chuvas~
+   **Given** ~que está chovendo e estou sem guarda-chuvas~
 
-    Given que está chovendo
-    Given que estou sem guarda chuvas
+   **Given** que está chovendo
+   **Given** que estou sem guarda chuvas
 
 ###### Arquivo **.feature** é o arquivo responsável por conter as "histórias" a serem mapeadas e resolvidas de acordo com os critérios de aceitação
