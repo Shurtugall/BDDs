@@ -17,4 +17,6 @@ Cada Feature deve ter um ou mais cenários. Cenários são divididos em 3 passos
    **Given** que está chovendo \
    **Given** que estou sem guarda chuvas
 
-###### Arquivo **.feature** é o arquivo responsável por conter as "histórias" a serem mapeadas e resolvidas de acordo com os critérios de aceitação
+Dessa forma é possível usar ambos os casos no mesmo cenário, além de usá-los separadamente para outros cenários.
+
+Arquivo **.feature** é o arquivo responsável por conter as "histórias" a serem mapeadas e resolvidas de acordo com os critérios de aceitação
