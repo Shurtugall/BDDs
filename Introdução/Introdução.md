@@ -41,26 +41,26 @@ Exemplos:
 
 .feature
 
-    Feature: Aprender Cucumber
-    Scenario: Deve executar especificacao
-	      Given que criei o arquivo corretamente
-	      When  executa-lo
-	      Then  a especificacao deve finalizar com sucesso
+    Feature: Aprendizado de Cucumber
+    Scenario: Executar uma especificacao
+	      Given o arquivo foi criado corretamente
+	      When  for feito a execucao
+	      Then  a especificacao deve obter sucesso
 
 .java
     
     public class AprenderCucumber {
-	    @Given("que criei o arquivo corretamente")
+	    @Given("o arquivo foi criado corretamente")
 	    public void que_criei_o_arquivo_corretamente() {
 	      System.out.println("Passou essa etapa");
 	    }
 
-	    @When("executa-lo")
+	    @When("for feito a execucao")
 	    public void executa_lo() {
         throw new RuntimeException();
 	    }
 
-	    @Then("a especificacao deve finalizar com sucesso")
+	    @Then("a especificacao deve obter sucesso")
 	    public void a_especificacao_deve_finalizar_com_sucesso() {
 	      throw new PendingException();
 	    }
