@@ -65,3 +65,7 @@ Exemplos:
 	      throw new PendingException();
 	    }
     }
+
+### Cucumber expressions
+
+Nas versões mais recentes do Cucumber, as *regular expressions* deixaram de ser aceitas, de forma que foram substituídas pelas Cucumber expressions. Dessa forma no link: [Cucumber Expressions](https://github.com/cucumber/cucumber-expressions#readme) é possível verificar a sintaxe a ser utilizada para que os codigos sejam aceitos.
