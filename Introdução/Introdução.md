@@ -1,4 +1,4 @@
-### Gherkin
+## Gherkin
 
 Linguagem usada para definir as features e estruturar todos os cenários. Extremamente legível para ser facilmente compreendida por todos os integrantes da equipe.
 
@@ -19,7 +19,7 @@ Cada Feature deve ter um ou mais cenários. Cenários são divididos em 3 passos
 
 Dessa forma é possível usar ambos os casos no mesmo cenário, além de usá-los separadamente para outros cenários.
 
-#### Fluidez na escrita
+### Fluidez na escrita
 
 Em casos que existem muitas repetições de uma mesma palavra chave, por exemplo, sequências de *given*, é possível usar outras notações para gerar uma maior fluidez na leitura. Dessa forma podemos utilizar And* para afirmações e *But* para negações. Por exemplo:
 
@@ -27,7 +27,7 @@ Em casos que existem muitas repetições de uma mesma palavra chave, por exemplo
    **And** que está chovendo \                          
    **But** que estou sem guarda chuvas    
 
-### Introdução
+## Introdução
 
 Existem dois tipos de arquivos a serem utilizados:
 
