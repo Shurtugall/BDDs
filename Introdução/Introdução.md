@@ -77,3 +77,42 @@ Exemplos:
 ### Cucumber expressions
 
 Nas versões mais recentes do Cucumber, as *regular expressions* deixaram de ser aceitas, de forma que foram substituídas pelas Cucumber expressions. Dessa forma no link: [Cucumber Expressions](https://github.com/cucumber/cucumber-expressions#readme) é possível verificar a sintaxe a ser utilizada para que os codigos sejam aceitos.
+
+
+### Tags
+
+Tags são usadas para selecionar pontos específicos a serem executados. Por exemplo, dado uma feature com vários cenários, decidimos executar apenas um em específico. Dessa forma basta adicionar uma tag acima da definição do cenário (p.ex., @this) e informar na classe Runner qual a tag que será utilizada. Pode ser utilizada a nível de cenários ou features. Exemplo abaixo:
+
+.feature
+
+	@this
+	Scenario: Deve calcular atraso na entrega
+		Given que a entrega é dia 05/04/2018
+		When a entrega atrasar em 2 "dias"
+		Then a entrega sera efetuada em 07/04/2018	
+
+Runner.java
+	
+	@RunWith(Cucumber.class)
+	@CucumberOptions(
+		tags="@this"
+	)
+	public class Runner {}
+
+**Observação**: tags podem ser usadas tanto para selecionar qual parte deve ser usada, bem como dizer qual parte não deve ser executada, dessa forma basta usar a tag *@ignore* e negar a mesma no runner, por exemplo:
+
+.feature
+
+	@ignore
+	Scenario: Deve calcular atraso na entrega
+		Given que a entrega é dia 05/04/2018
+		When a entrega atrasar em 2 "dias"
+		Then a entrega sera efetuada em 07/04/2018	
+
+Runner.java
+	
+	@RunWith(Cucumber.class)
+	@CucumberOptions(
+		tags="~@ignore"
+	)
+	public class Runner {}
