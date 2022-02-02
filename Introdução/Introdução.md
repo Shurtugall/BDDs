@@ -115,6 +115,6 @@ Runner.java
 	
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
-		tags="~@ignore"
+		tags="not @ignore"
 	)
 	public class Runner {}
