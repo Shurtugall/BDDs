@@ -99,6 +99,8 @@ Runner.java
 	)
 	public class Runner {}
 
+Para executar mais de uma tag, basta colocar entre chaves: *tags={"@tipo1", "@tipo2"}*
+
 **Observação**: tags podem ser usadas tanto para selecionar qual parte deve ser usada, bem como dizer qual parte não deve ser executada, dessa forma basta usar a tag *@ignore* e negar a mesma no runner, por exemplo:
 
 .feature
