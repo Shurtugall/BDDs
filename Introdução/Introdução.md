@@ -81,7 +81,7 @@ Nas versões mais recentes do Cucumber, as *regular expressions* deixaram de ser
 
 ### Tags
 
-Tags são usadas para selecionar pontos específicos a serem executados. Por exemplo, dado uma feature com vários cenários, decidimos executar apenas um em específico. Dessa forma basta adicionar uma tag acima da definição do cenário (p.ex., @this) e informar na classe Runner qual a tag que será utilizada. Pode ser utilizada a nível de cenários ou features. Exemplo abaixo:
+Tags são usadas para selecionar pontos específicos a serem executados. Por exemplo, dado uma feature com vários cenários, decidimos executar apenas um em específico. Dessa forma basta adicionar uma tag acima da definição do cenário (p.ex., @this) e informar na classe Runner qual a tag que será utilizada. Pode ser utilizada a nível de cenários ou features. Para mais opções, consulte [Cucumber Tags](https://www.toolsqa.com/cucumber/cucumber-tags/). Exemplo abaixo:
 
 .feature
 
