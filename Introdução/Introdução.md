@@ -118,3 +118,6 @@ Runner.java
 		tags="not @ignore"
 	)
 	public class Runner {}
+
+
+Perceba que tags podem facilitar muito o dia a dia para a execução de testes. Por exemplo, durante uma sprint podemos definir todos os testes com a tag "@sprint3", logo se passarmos como parâmetro no Runner essa tag, apenas os testes da sprint 3 serão executados. Assim podemos criar testes de regressão com a tag "@regressao", para que possamos executar todos esses testes de tempos em tempos a fim de verificar se tudo continua funcionando.
